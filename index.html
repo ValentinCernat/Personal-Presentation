@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curriculum vitae</title>
+        <link class="Icon" rel="icon" type="image/png" href="assets/icon2.png" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="BoxBody">
+            <div class="LeftSide">
+                <div class="Button">
+                    <span><button id="HomeButton" class="Color">Home color</button></span>
+                    <span><button id="RandomButton" class="Color">Random colors</button></span>
+                    <samp><button onclick="AfisareRo();" class="RoEn">RO</button></samp>
+                    <samp><button onclick="AfisareEn();" class="RoEn">EN</button></samp>
+                </div> 
+                <div class="ProfilText">
+                    <div class="ImgBox">
+                        <img src="assets/Vali.jpg" alt="Poza profil">
+                    </div>
+                    <h2>Valentin Cernat <br><span id="NameMe">Mechanical Engineer</span></h2>
+                </div>
+                <div class="ContactInfo">
+                    <h3 class="Title">Contact Info</h3>
+                    <ul>
+                        <li>
+                            <span class="Icon"><i class="fa fa-flag" aria-hidden="true"></i></span>
+                            <span id="Nationality" class="Text">Nationality: Romanian</span>
+                        </li>
+                        <li>
+                            <span class="Icon"><i class="fa fa-mars" aria-hidden="true"></i></span>
+                            <span id="SexM" class="Text">Male</span>
+                        </li>
+                        <li>
+                            <span class="Icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                            <span id="DateBirth" class="Text">Date of birth: 01/13/1992</span>
+                        </li>
+                        <li>
+                            <span class="Icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span id="RoBu" class="Text">Bucharest, Romania</span>
+                        </li>
+                        <li>
+                            <a href="tel:+40786347913" title="Date de contact" target="_blank">
+                                <span class="Icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                <span class="Text">+40 786 327 913</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:cernat92@gmail.com" title="Date de contact" target="_blank">
+                                <span class="Icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                <span class="Text">cernat92@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/valentin-stefan-cernat-639396232" title="View my LinkedIn profile" target="_blank">
+                                <span class="Icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                                <span class="Text">linkedin.com/valentincernat</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/cernat92" title="View my Facebook profile" target="_blank">
+                                <span class="Icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></span>
+                                <span class="Text">facebook.com/valentincernat</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/cernat_valentin_stefan/?hl=en" title="View my Instagram profile" target="_blank">
+                                <span class="Icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                <span class="Text">instagram.com/valentincernat</span>
+                            </a>
+                        </li>                       
+                    </ul>
+                </div>
+                <div class="ContactInfoEducation">
+                    <h3 id="Education" class="Title">Education</h3>
+                    <ul>
+                        <li>
+                            <h5>2015-2017</h5>
+                            <h4 id="MasterDegree">Master Degree Mechanical Engineer</h4>
+                            <h4 id="UpbM" class="Upb">Polytechnic University of Bucharest</h4>
+                        </li>
+                        <li>
+                            <h5>2011-2015</h5>
+                            <h4 id="BachelorDegree">Bachelor Degree Mechanical Engineer</h4>
+                            <h4 id="UpbL" class="Upb">Polytechnic University of Bucharest</h4>
+                        </li>
+                    </ul>
+                </div>
+                <div class="InfoLanguages">
+                    <h3 id="Language" class="Title">Languages skills</h3>
+                    <ul>
+                        <li>
+                            <span id="English" class="Text">English</span>
+                            <span class="Percent">
+                                <div class="English"></div>
+                            </span>
+                        </li>
+                        <li>
+                            <span id="Romanian" class="Text">Romanian</span>
+                            <span class="Percent">
+                                <div class="Romanian"></div>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="InfoSkills">
+                    <h3 id="DigitalSkills" class="Title">DIGITAL SKILLS</h3>
+                    <ul>
+                        <li>
+                            <h5>2022</h5>
+                            <h4 id="ItCourse">IT courses</h4>
+                            <h4 id="CourseText" class="Upb">I will present some knowledge acquired from courses related to IT area as follows:
+                                JavaScript,CSS,HTML. You can find my projects on GitHub: 
+                            </h4>
+                            <a href="https://github.com/ValentinCernat" title="View my Github Projects" target="_blank">
+                                <span class="Icon"><i class="fa fa-search" aria-hidden="true"></i></i></span>
+                                <span class="Text">github.com/valentincernat</span>
+                            </a>
+                        </li>
+                        <li>
+                            <h4>DoIT Academy</h4>
+                            <a href="https://doitacademy.ro/" title="View DoIT Academy website" target="_blank">
+                                <span class="Icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                <span class="Text">DoIT Academyt</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Driving">
+                    <h3 id="DrivingL" class="Title">DRIVING LICENCE</h3>
+                    <ul>
+                        <li class="DrivingLine">
+                            <h4 id="DrivingB">Driving Licence: B</h4>
+                            <i class="fa fa-car far" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="Right" class="RightSide">          
+                <div class="About">
+                    <h2 id="Demo" class="AboutTitle">About me</h2>
+                    <p id="Description">I am very organized with time and work, good skills at working under pressure to meet deadlines, hardworking
+                        and good communicator. I can adapt easily because I am a social person and I learn quickly.</p>
+                </div>
+                <div class="About">
+                    <h2 id="Work" class="AboutTitle">Work experiance</h2>
+                    <div class="ExperianceBox">
+                        <div class="YearCompany">
+                            <h5 id="Present">2017 - Present</h5>
+                            <h5>SC Renault Technologie Roumanie S.R.L.</h5>
+                            <h5 id="CityTitu">City: Titu</h5>
+                            <h5 id="CountryRo">Country: Romania</h5>
+                        </div>
+                        <div class="Text">
+                            <h4 id="Function">Leader engineer T&C</h4>
+                            <p id="Job">Leader engineer T&C responsibility:</p>
+                            <p id="Job1">- Training the team on non-compliances due to suppliers, with complaints, alerts and derogations;</p>
+                            <p id="Job2">- Training the team for quality audits with suppliers;</p>
+                            <p id="Job3">- Monitoring the process in the assembly line;</p>
+                            <p id="Job4">- Preparing and organizing the audit team at the supplier;</p>
+                            <p id="Job5">- Preparation of quality indicators.</p> 
+                            <p id="Job6">External business trip:</p> 
+                            <p id="Job7">22 .05.2021 - 27.07.2021 Business trip to Rusia, Togliatti - Avtovaz. Training the Quality team from Russia</p> 
+                            <p id="Job8">- 1D measuring training. Preparing and fill the 1D file, preparing and share the 1D indicators.</p> 
+                            <p id="Job9">- Training the rework team. Preparing and fill the rework file. Following the status of the reworks, preparing and</p> 
+                            <p id="Job10">share the reworks indicators</p> 
+                            <p id="Job11">05 .09.2021 - 17 .12 .2021 Business trip to France, Paris - TCR.</p> 
+                            <p id="Job12">- Support for the Incoming Quality team</p> 
+                            <p id="Job13">- POE Geometry training - validation of the checking fixtures.</p> 
+                            
+                        </div>    
+                    </div>
+                    <div class="ExperianceBox">
+                        <div class="YearCompany">
+                            <h5>2016 - 2017</h5>
+                            <h5>SC Walter Tosto Bucuresti SRL</h5>
+                            <h5 id="CityBu">City: Bucharest</h5>
+                            <h5 id="ConRo">Country: Romania</h5>
+                        </div>
+                        <div class="Text">
+                            <h4 id="JobWtb">Quality inspector</h4>
+                            <p id="JobWtb1">Walter Tosto is a worldwide leading manufacturer of critical, long lead equipment for the Oil & Gas,</p>
+                            <p id="JobWtb2">Petrochemical, Power & Energy markets</p>
+                            <p id="JobWtb3">Quality inspector responsibility :</p>
+                            <p id="JobWtb4">- Preparing and follow-up of the technical inspection plan.</p>
+                            <p id="JobWtb5">- Preparing the procedures for Non-destructive testing: VT, LP, MT, UT.</p>
+                            <p id="JobWtb6">- Preparing the quality book.</p>
+                            <p id="JobWtb7">- Periodic meeting with project team to present the status of the project and taking in account of the new tasks.</p>
+                            <p id="JobWtb8">- Organise periodic meeting with supplier inspector for validate the importance welding and to receive the final</p>
+                            <p id="JobWtb9">approvement for delivery.</p>
+                            <p id="JobWtb10">- Checking the date of the measurement equipment and send for calibration.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="About Skills">
+                    <h2 id="ProfSkills" class="AboutTitle">Professional skills</h2>
+                    <div class="ExperianceBox">
+                        <h4>Html</h4>
+                        <div class="Percent">
+                            <div class="Html"></div>
+                        </div>
+                    </div>
+                    <div class="ExperianceBox">
+                        <h4>CSS</h4>
+                        <div class="Percent">
+                            <div class="Css"></div>
+                        </div>
+                    </div>
+                    <div class="ExperianceBox">
+                        <h4>Javascript</h4>
+                        <div class="Percent">
+                            <div class="Javascript"></div>
+                        </div>
+                    </div>
+                    <div class="ExperianceBox">
+                        <h4>Bootstrap</h4>
+                        <div class="Percent">
+                            <div class="Bootstrap"></div>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="About Interest">
+                    <h2 id="Interest" class="AboutTitle">Interest</h2>
+                    <ul>
+                        <li><i class="fa fa-gamepad" aria-hidden="true"></i><p id="Gaming">Gaming</p></li>
+                        <li><i class="fa fa-music" aria-hidden="true"></i><p id="Music">Music</p></li>
+                        <li><i class="fa fa-cutlery" aria-hidden="true"></i><p id="Cooking">Cooking</p></li>
+                        <li><i class="fa fa-car" aria-hidden="true"></i><p id="Driving">Driving</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <script src="script.js"></script>
+        </div>  
+        
+        
+
+    </body>
+</html>
